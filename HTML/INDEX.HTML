@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <title>ESR.MN</title>
+    
+</head>
+<body>
+    <div id="progressbar"></div>
+    <div id="scrollpath"></div>
+    <script type="text/javascript">
+    let progress = document.getElementById( 'progressbar');
+    let totalheight = document.body.scrollHeight - 
+    window.innerHeight;
+    window.onscroll = function(){
+        let progressHeight = (window.pageYOffset / totalheight) * 100;
+        progress.style.height = progressHeight + "%";
+    }
+    </script>
+    <header>
+        <h3><a href="/HTML/ranking.html">ESR.MN</a></h3>
+        <!-- <img src="/image/logo-png.png" alt="" class="logo"> -->
+        <nav>
+            <ul class="nav__links">
+                <li><a href="#">ЭХЛЭЛ</a></li>
+                <li><a href="#">TЭМЦЭЭН</a></li>
+                <li><a href="/HTML/ranking.html">RANK</a></li>
+                <li><a href="#">STREAMER</a></li>
+                <li><a href="#">CLAN</a></li>
+            </ul>
+        </nav>
+        <a class="contact" href="/HTML/CONTACT.HTML">ХОЛБОО БАРИХ</a>
+    </header>
+
+    <section class="slide-show">
+
+    <!--image slider start-->
+    <div class="slider">
+        <div class="slides">
+            <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+            <img src="/image/slide/cover.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="/image/slide/1.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="/image/slide/3.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="/image/slide/2.jpg" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+        </div>
+        <!--automatic navigation end-->
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+
+    <script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4){
+        counter = 1;
+        }
+    }, 5000);
+    </script>
+    </section>
+    <!-- streamer -->
+    <section id="streamer">
+        <h2>TOP <span class="animate">STREAMER</span></h2>
+        <script src="/HTML/typed.js"></script>
+        <script>
+            var typed = new Typed('.animate', {
+            strings: [
+                "gaming",
+                "top",
+                "streamer",
+            ],
+            typespeed: 50,
+            backspeed: 50,
+            loop: true,
+            });
+        </script>
+        <div class="container">
+                <div class="box">
+                    <div class="imgbox">
+                        <img src="/image/streamer/ct.jpg" alt="">
+                    </div>
+                    <div class="details">
+                        <div class="content">
+                            <h2>CASTER TUVSHUUN</h2>
+                            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quisquam eum itaque dolores ullam dolor ab commodi alias dicta a.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgbox">
+                        <img src="/image/streamer/mendeen.jpg" alt="">
+                    </div>
+                    <div class="details">
+                        <div class="content">
+                            <h2>MENDEEN</h2>    
+                            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quisquam eum itaque dolores ullam dolor ab commodi alias dicta a.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgbox">
+                        <img src="/image/streamer/coffin.jpg" alt="">
+                    </div>
+                    <div class="details">
+                        <div class="content">
+                            <h2>COFFIN</h2>
+                            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quisquam eum itaque dolores ullam dolor ab commodi alias dicta a.</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgbox">
+                        <img src="/image/streamer/13aka.jpg" alt="">
+                    </div>
+                    <div class="details">
+                        <div class="content">
+                            <h2>13 AKA</h2>
+                            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quisquam eum itaque dolores ullam dolor ab commodi alias dicta a.</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- game -->
+
+    <section id="game">
+        <h2> online <span>GAMES</span></h2>
+        <div class="container">
+            <div class="box">
+                <div class="imgbox">
+                    <img src="/image/logo/pubgm.png" alt="">
+                </div>
+                <div class="details">
+                    <div class="content">
+                        <h2>PUBG MOBILE</h2>
+                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quisquam eum itaque dolores ullam dolor ab commodi alias dicta a.</P>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgbox">
+                    <img src="/image/logo/csgo.png" alt="">
+                </div>
+                <div class="details">
+                    <div class="content">
+                        <h2>CS GO</h2>    
+                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quisquam eum itaque dolores ullam dolor ab commodi alias dicta a.</P>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgbox">
+                    <img src="/image/logo/Mobile-legends.png" alt="">
+                </div>
+                <div class="details">
+                    <div class="content">
+                        <h2>Mobile-legends</h2>
+                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quisquam eum itaque dolores ullam dolor ab commodi alias dicta a.</P>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

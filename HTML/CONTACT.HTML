@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESR.MN</title>
+    <link rel="stylesheet" href="/CSS/contact.css">
+</head>
+<body>
+    <div id="progressbar"></div>
+    <div id="scrollpath"></div>
+    <script type="text/javascript">
+    let progress = document.getElementById( 'progressbar');
+    let totalheight = document.body.scrollHeight - 
+    window.innerHeight;
+    window.onscroll = function(){
+        let progressHeight = (window.pageYOffset / totalheight) * 100;
+        progress.style.height = progressHeight + "%";
+    }
+    </script>
+    <header>
+        <h3>ESR.MN</h3>
+        <!-- <img src="/image/logo-png.png" alt="" class="logo"> -->
+        <nav>
+            <ul class="nav__links">
+                <li><a href="/HTML/INDEX.HTML">ЭХЛЭЛ</a></li>
+                <li><a href="#">TЭМЦЭЭН</a></li>
+                <li><a href="#">STREAMER</a></li>
+                <li><a href="#">БАГ</a></li>
+            </ul>
+        </nav>
+        <a class="contact" href="/HTML/CONTACT.HTML">ХОЛБОО БАРИХ</a>
+    </header>
+
+    <div class="contact-section">
+
+        <h1>ХОЛБОГДОХ</h1>
+        <div class="border"></div>
+        <form class="contact-form" action="index.html" method="post">
+        <input type="text" class="contact-form-text" placeholder="Таны нэр">
+        <input type="email" class="contact-form-text" placeholder="Таны имайл">
+        <input type="text" class="contact-form-text" placeholder="Таны дугаар">
+        <textarea class="contact-form-text" placeholder="Шуудан"></textarea>
+        <!-- <input   type="submit"  class="contact-form-btn" value="Илгээх"> -->
+        <a href="/HTML/contact-finish.html" type="submit" class="contact-form-btn" >Илгээх</a>
+        </form>
+    </div>
+</body>
+</html>
